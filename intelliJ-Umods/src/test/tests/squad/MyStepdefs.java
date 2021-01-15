@@ -11,7 +11,9 @@ public class MyStepdefs {
 
 
     @Gegeven("^de gebruiker is ingelogd$")
-    public void deGebruikerIsIngelogd() {
+    public void de_gebruiker_is_ingelogd() throws Exception {
+        // Write code here that turns the phrase above into concrete actions
+        
     }
 
     @En("^bevindt zich op de homepagina$")

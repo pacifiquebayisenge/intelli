@@ -5,7 +5,7 @@ import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resources/task.feature")
+@CucumberOptions(features = "src/test/resources/task/task.feature")
 public class RunTests {
 
 

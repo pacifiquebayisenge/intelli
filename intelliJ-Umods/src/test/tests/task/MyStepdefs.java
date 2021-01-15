@@ -14,6 +14,7 @@ public class MyStepdefs {
 
     }
 
+
     @En("^bevindt zich op de pagina van de gekozen groep$")
     public void bevindtZichOpDePaginaVanDeGekozenGroep() {
     }

@@ -3,7 +3,7 @@
     Als gebruiker wil ik een squad kunnen aanmaken, zodat ik er taken kan aanmaken, beheren of toewijzen voor de groepsleden of mezelf
 
       Achtergrond:
-        Gegeven de gebruiker is ingelogd
+        Gegeven  de gebruiker is ingelogd
         En  bevindt zich op de homepagina
 
 
