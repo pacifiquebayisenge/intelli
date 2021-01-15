@@ -1,11 +1,15 @@
-package tests;
+package tests.squad;
 
 import cucumber.api.java.nl.Als;
 import cucumber.api.java.nl.Dan;
 import cucumber.api.java.nl.En;
 import cucumber.api.java.nl.Gegeven;
 
+
+
 public class MyStepdefs {
+
+
     @Gegeven("^de gebruiker is ingelogd$")
     public void deGebruikerIsIngelogd() {
     }
