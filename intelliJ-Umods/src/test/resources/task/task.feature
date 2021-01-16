@@ -9,13 +9,13 @@ Als gebruiker wil ik taken kunnen aanmaken zodat ik de taken per groep kan beher
 
 
   Scenario: een task aanmaken met de naam 'huiswerk maken'
-    Als  de gebruiker een task aanmaakt met de naam 'huiswerk maken'
-    Dan  zou de gebruiker 'task succesfully created' moeten zien verschijnen
+    Als  de gebruiker een task aanmaakt met de naam "huiswerk maken"
+    Dan  zou de gebruiker "task successfully created" moeten zien verschijnen
     En  wordt de pagina herladen met de nieuw gemaakte task
 
   Scenario: de naam van een tasks wijzigen
-    Als  de gebruiker de naam van een task wijzigt naar 'studeren voor de toets'
-    Dan  zou de gebruiker 'task succesfully edited' moeten zien verschijnen
+    Als  de gebruiker de naam van een task wijzigt naar "studeren voor de toets"
+    Dan  zou de gebruiker "task successfully edited" moeten zien verschijnen
     En  wordt de pagina herladen met de gewijzigde task
 
   Scenario: een task verwijderen

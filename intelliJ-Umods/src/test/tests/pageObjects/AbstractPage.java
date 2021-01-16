@@ -26,10 +26,21 @@ public  class AbstractPage {
     }
 
     // navigeer naar overview page
-    public SquadPagina navigateToSquadPage() {
+    public TaskPagina navigateToSquadPage() throws InterruptedException {
 
-        driver.findElement(By.id("overviewLink")).click();
-        return new SquadPagina(driver);
+        Thread.sleep(2000);
+        driver.findElement(By.className("card")).click();
+        return new TaskPagina(driver);
+    }
+
+    // mehode om notifcatie op te halen en te verglijken
+    public boolean checkNotif(String notif) throws InterruptedException {
+
+        Thread.sleep(1000);
+        String getNotif = driver.findElement(By.tagName("snack-bar-container")).getText();
+        System.out.println(getNotif);
+        boolean result = notif.contentEquals(getNotif);
+        return result;
     }
 
     // browser sluiten

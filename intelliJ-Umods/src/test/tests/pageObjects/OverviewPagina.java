@@ -12,11 +12,10 @@ public class OverviewPagina extends  AbstractPage {
     // methode om te zien of de overview pagina geladen is
     public  boolean overviewPageCheck() {
 
-        // haal pagina tital op
+        // haal pagina titel op
         String homepageTitle = driver.findElement(By.id("pageTitle")).getText();
         boolean result = homepageTitle.contentEquals( "Overview");
         return  result;
-
     }
 
     // methode om squad te selecteren
@@ -27,7 +26,6 @@ public class OverviewPagina extends  AbstractPage {
 
         // klik op een select option
         driver.findElement(By.className("mat-option-text")).click();
-
     }
 
     // methhode om na te zien of visualties worden weergegeven

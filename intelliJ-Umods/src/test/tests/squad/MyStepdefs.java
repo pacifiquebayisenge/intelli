@@ -1,15 +1,12 @@
 package tests.squad;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.nl.Als;
 import cucumber.api.java.nl.Dan;
 import cucumber.api.java.nl.En;
 import cucumber.api.java.nl.Gegeven;
 import org.junit.Assert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import tests.pageObjects.HomePagina;
 import tests.pageObjects.LoginPagina;
 import tests.pageObjects.OverviewPagina;
@@ -134,7 +131,6 @@ public class MyStepdefs {
         // kijk na of de squad gesubmit kan worden
         Assert.assertFalse(homePagina.isClickable());
     }
-
 
     @Als("^de gebruiker de naam van een squad wijzigt naar \"([^\"]*)\"$")
     public void deGebruikerDeNaamVanEenSquadWijzigtNaar(String squadName) throws Throwable {

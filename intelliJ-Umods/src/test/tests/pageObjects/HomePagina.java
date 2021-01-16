@@ -1,14 +1,9 @@
 package tests.pageObjects;
 
-import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.lang.reflect.Array;
 
 public class HomePagina extends AbstractPage {
 
@@ -24,11 +19,7 @@ public class HomePagina extends AbstractPage {
         String homepageTitle = driver.findElement(By.id("pageTitle")).getText();
         boolean result = homepageTitle.contentEquals("Squad List");
         return result;
-
     }
-
-
-
 
     // methode om na te zien of er al squads bestaan
     public boolean getSquads() {
@@ -109,16 +100,6 @@ public class HomePagina extends AbstractPage {
         return membCount;
     }
 
-    // mehode om notifcatie op te halen en te verglijken
-    public boolean checkNotif(String notif) throws InterruptedException {
-
-        Thread.sleep(1000);
-        String getNotif = driver.findElement(By.tagName("snack-bar-container")).getText();
-        System.out.println(getNotif);
-        boolean result = notif.contentEquals(getNotif);
-        return result;
-    }
-
     // methode om ongeldige gegevens in te voeren
     public void setInvalidfFields() throws InterruptedException {
 
@@ -171,7 +152,6 @@ public class HomePagina extends AbstractPage {
         Thread.sleep(2000);
         driver.findElement(By.id("btnDelete")).click();
     }
-
 
     public void deleteMem(String memName) throws InterruptedException {
 
