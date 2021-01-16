@@ -28,8 +28,6 @@ public class MyStepdefs {
     HomePagina homePagina;
     OverviewPagina overviewPagina;
 
-    WebDriverWait wait = new WebDriverWait(driver,500);
-
     @Gegeven("^de gebruiker is ingelogd$")
     public void de_gebruiker_is_ingelogd() throws Exception {
         // Write code here that turns the phrase above into concrete actions
@@ -42,8 +40,7 @@ public class MyStepdefs {
         // gebruiker logt zich in
         homePagina =  loginPagina.login();
 
-        // wachten tot popup sluit
-        Thread.sleep(5000);
+
 
         // check of de homepagina geladen is
         Assert.assertTrue(homePagina.homePageCheck());

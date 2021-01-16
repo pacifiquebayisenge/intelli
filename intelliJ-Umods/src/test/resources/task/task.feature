@@ -1,6 +1,6 @@
 #language: nl
 
-Functionaliteit: een task behren
+Functionaliteit: een task beheren
 Als gebruiker wil ik taken kunnen aanmaken zodat ik de taken per groep kan beheren en/of toewijzen aan mezelf of andere leden om de productiviteit van de groep te verbeteren
 
   Achtergrond:
@@ -13,7 +13,7 @@ Als gebruiker wil ik taken kunnen aanmaken zodat ik de taken per groep kan beher
     Dan  zou de gebruiker 'task succesfully created' moeten zien verschijnen
     En  wordt de pagina herladen met de nieuw gemaakte task
 
-  Scenario: de naam van een taks wijzigen
+  Scenario: de naam van een tasks wijzigen
     Als  de gebruiker de naam van een task wijzigt naar 'studeren voor de toets'
     Dan  zou de gebruiker 'task succesfully edited' moeten zien verschijnen
     En  wordt de pagina herladen met de gewijzigde task
