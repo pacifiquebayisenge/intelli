@@ -14,7 +14,7 @@ public  class AbstractPage {
     // navigeer naar webApp
     public LoginPagina navigateToWebApp() {
 
-        driver.navigate().to("http://localhost:4200/");
+        driver.navigate().to("https://uw-vent-onder-de-sloef.web.app/");
         return  new LoginPagina(driver);
     }
 
@@ -36,7 +36,7 @@ public  class AbstractPage {
     // mehode om notifcatie op te halen en te verglijken
     public boolean checkNotif(String notif) throws InterruptedException {
 
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         String getNotif = driver.findElement(By.tagName("snack-bar-container")).getText();
         System.out.println(getNotif);
         boolean result = notif.contentEquals(getNotif);

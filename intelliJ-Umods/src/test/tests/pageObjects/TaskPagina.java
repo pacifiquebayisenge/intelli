@@ -21,7 +21,7 @@ public class TaskPagina extends AbstractPage {
     // methode om titel in te vullen
     public void setTitleField(String taskTitle) throws InterruptedException {
 
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         driver.findElement(By.id("taskTitle")).clear();
         driver.findElement(By.id("taskTitle")).sendKeys(taskTitle);
     }
@@ -67,13 +67,16 @@ public class TaskPagina extends AbstractPage {
 
         Thread.sleep(3000);
         driver.findElement(By.id("tableTaskTitle_" + taskTitle)).click();
+        Thread.sleep(1000);
     }
 
     // methode op edit form te opennen
     public void openEditTaskForm() throws InterruptedException {
 
-        Thread.sleep(5000);
+        Thread.sleep(3000);
+        Thread.sleep(2000);
         driver.findElement(By.id("btnEdit")).click();
+
     }
 
     // methode om task te verwijren

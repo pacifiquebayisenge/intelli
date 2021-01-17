@@ -95,7 +95,7 @@ public class HomePagina extends AbstractPage {
     // methode om het aantal membet op te halen
     public String getMemCount(String squadName) throws InterruptedException {
 
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         String membCount = driver.findElement(By.id(squadName + "_membCount")).getText();
         return membCount;
     }
@@ -151,6 +151,8 @@ public class HomePagina extends AbstractPage {
 
         Thread.sleep(2000);
         driver.findElement(By.id("btnDelete")).click();
+        Thread.sleep(1000);
+
     }
 
     public void deleteMem(String memName) throws InterruptedException {
@@ -164,6 +166,16 @@ public class HomePagina extends AbstractPage {
 
         Thread.sleep(500);
         driver.findElement(By.id("btnCancel")).click();
+    }
+
+    // methode om icon te kiezen
+    public void setSqIconField2() {
+
+        // zoek de selectbar
+        driver.findElement(By.id("select")).click();
+
+        // klik op een select option
+        driver.findElement(By.id("icon_eco")).click();
     }
 
 

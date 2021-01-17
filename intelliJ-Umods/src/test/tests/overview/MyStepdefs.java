@@ -20,9 +20,6 @@ import tests.pageObjects.OverviewPagina;
 
 public class MyStepdefs {
 
-
-
-
     WebDriver driver = new FirefoxDriver();
     LoginPagina loginPagina;
     HomePagina homePagina;
@@ -40,11 +37,8 @@ public class MyStepdefs {
         // gebruiker logt zich in
         homePagina =  loginPagina.login();
 
-
-
         // check of de homepagina geladen is
         Assert.assertTrue(homePagina.homePageCheck());
-
     }
 
     @En("^beschikt over een squad met leden en taken$")
@@ -52,7 +46,6 @@ public class MyStepdefs {
 
         // kijkt na of gebruiker tot squads behoort
        Assert.assertTrue(homePagina.getSquads());
-
     }
 
     @En("^bevindt zich op de overview pagina$")
@@ -63,7 +56,6 @@ public class MyStepdefs {
 
         // check of de overview geladen is
         Assert.assertTrue(overviewPagina.overviewPageCheck());
-
     }
 
     @Als("^de gebruiker een squad selecteert$")
@@ -71,7 +63,6 @@ public class MyStepdefs {
 
         // selecteer een squad
         overviewPagina.selectSquad();
-
     }
 
     @Dan("^zou de gebruiker een visualisatie moeten zien over de vooruitgang van de squad$")
@@ -79,6 +70,5 @@ public class MyStepdefs {
 
         // check of visualisaties worden weergeven
         Assert.assertTrue(overviewPagina.visualisationCheck());
-
     }
 }

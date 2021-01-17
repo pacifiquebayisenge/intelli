@@ -78,7 +78,6 @@ public class MyStepdefs {
         taskPagina.openEditTaskForm();
         taskPagina.setTitleField(nieuwTaskTitle);
         taskPagina.submit();
-
     }
 
 
@@ -91,11 +90,10 @@ public class MyStepdefs {
 
     @Als("^de gebruiker een task verwijdert$")
     public void deGebruikerEenTaskVerwijdert() throws Throwable {
+
         huidigTaskTitle = "studeren voor de toets";
         taskPagina.clickTask(huidigTaskTitle);
         taskPagina.delTask();
-
-
     }
 
     @Dan("^wordt de pagina herladen en is de verwijderde task niet meer zichtbaar$")
@@ -110,9 +108,6 @@ public class MyStepdefs {
         taskPagina.openTaskForm();
         taskPagina.setInvalidFields();
         taskPagina.setInvalidFields();
-
-
-
     }
 
     @Dan("^zou de gebruiker de task niet moeten kunnen aanmaken$")
@@ -120,7 +115,5 @@ public class MyStepdefs {
 
         Assert.assertFalse(taskPagina.isClickable());
     }
-
-
 
 }

@@ -13,7 +13,7 @@ Als gebruiker wil ik taken kunnen aanmaken zodat ik de taken per groep kan beher
     Dan  zou de gebruiker "task successfully created" moeten zien verschijnen
     En  wordt de pagina herladen met de nieuw gemaakte task
 
-  Scenario: de naam van een tasks wijzigen
+  Scenario: de naam van een task wijzigen
     Als  de gebruiker de naam van een task wijzigt naar "studeren voor de toets"
     Dan  zou de gebruiker "task successfully edited" moeten zien verschijnen
     En  wordt de pagina herladen met de gewijzigde task

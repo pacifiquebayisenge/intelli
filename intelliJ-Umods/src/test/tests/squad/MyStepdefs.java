@@ -94,7 +94,7 @@ public class MyStepdefs {
         homePagina.setSqNameField(squadName);
 
         // kies icon
-        homePagina.setSqIconField();
+        homePagina.setSqIconField2();
     }
 
     @En("^een nieuw lid toevoegd$")
