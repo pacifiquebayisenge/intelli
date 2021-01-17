@@ -33,6 +33,17 @@ public  class AbstractPage {
         return new TaskPagina(driver);
     }
 
+    // navigeer naar calender page
+    public CalendarPage navigateToCalPage() throws InterruptedException {
+
+        Thread.sleep(2000);
+        driver.findElement(By.id("calendarLink")).click();
+        Thread.sleep(2000);
+
+        return new CalendarPage(driver);
+
+    }
+
     // mehode om notifcatie op te halen en te verglijken
     public boolean checkNotif(String notif) throws InterruptedException {
 
@@ -50,4 +61,17 @@ public  class AbstractPage {
         driver.close();
     }
 
-}
+    // methode om uit te loggen
+    public void logout() throws InterruptedException {
+
+        Thread.sleep(2000);
+        driver.findElement(By.id("logoutLink")).click();
+
+        Thread.sleep(1000);
+
+        // velden leeg maken
+        driver.findElement(By.id("emailInput")).clear();
+        driver.findElement(By.id("pwdInput")).clear();
+    }
+
+    }

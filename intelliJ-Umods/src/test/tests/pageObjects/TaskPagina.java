@@ -111,4 +111,12 @@ public class TaskPagina extends AbstractPage {
             return false;
         }
     }
+
+    public int getTaskCount(String assignName) throws InterruptedException {
+
+        Thread.sleep(3000);
+        int taskCount = driver.findElements(By.id("assign_" + assignName)).toArray().length;
+        return taskCount;
+
+    }
 }
